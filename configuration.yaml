@@ -1,0 +1,46 @@
+logging:
+  level: error
+
+# Web server
+web:
+  host: '0.0.0.0'
+
+## Parsers
+parsers:
+  - name: apiai
+    access-token: $APIAI_ACCESS_TOKEN
+    min-score: 0.6
+
+## Connector modules
+connectors:
+  - name: twitter
+    consumer_key: $TWITTER_CONSUMER_KEY
+    consumer_secret: $TWITTER_CONSUMER_SECRET
+    oauth_token: $TWITTER_OAUTH_TOKEN
+    oauth_token_secret: $TWITTER_OAUTH_TOKEN_SECRET
+    enable_dms: true
+    enable_tweets: false
+
+  - name: facebook
+    verify-token: $FACEBOOK_VERIFY_TOKEN
+    page-access-token: $FACEBOOK_PAGE_ACCESS_TOKEN
+
+databases:
+  - name: mongo
+    host: $MONGO_HOST
+    database: opsdroid
+
+## Skill modules
+skills:
+
+  ## API.AI (https://github.com/opsdroid/skill-apiai)
+  - name: apiai
+
+  ## Last seen (https://github.com/opsdroid/skill-seen)
+  - name: seen
+
+  ## Dance (https://github.com/opsdroid/skill-dance)
+  - name: dance
+
+  ## Loud noises (https://github.com/opsdroid/skill-loudnoises)
+  - name: loudnoises
