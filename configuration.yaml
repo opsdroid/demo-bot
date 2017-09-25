@@ -25,10 +25,10 @@ connectors:
     verify-token: $FACEBOOK_VERIFY_TOKEN
     page-access-token: $FACEBOOK_PAGE_ACCESS_TOKEN
 
-databases:
-  - name: mongo
-    host: $MONGO_HOST
-    database: opsdroid
+#databases:
+#  - name: mongo
+#    host: $MONGO_HOST
+#    database: opsdroid
 
 ## Skill modules
 skills:

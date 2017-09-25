@@ -1,4 +1,4 @@
-FROM opsdroid/opsdroid:v0.9.0
+FROM opsdroid/opsdroid:v0.9.1
 
 EXPOSE 8080
 
