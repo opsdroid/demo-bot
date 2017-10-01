@@ -7,6 +7,7 @@
     "TWITTER_OAUTH_TOKEN_SECRET": "@twitter-oauth-token-secret",
     "FACEBOOK_VERIFY_TOKEN": "@facebook-verify-token",
     "FACEBOOK_PAGE_ACCESS_TOKEN": "@facebook-page-access-token",
+    "GITHUB_TOKEN": "@github-token",
     "MONGO_HOST": "@mongo-host"
   }
 }

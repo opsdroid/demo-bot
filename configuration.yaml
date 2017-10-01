@@ -25,6 +25,9 @@ connectors:
     verify-token: $FACEBOOK_VERIFY_TOKEN
     page-access-token: $FACEBOOK_PAGE_ACCESS_TOKEN
 
+  - name: github
+    github-token: $GITHUB_TOKEN
+
 #databases:
 #  - name: mongo
 #    host: $MONGO_HOST
@@ -44,3 +47,6 @@ skills:
 
   ## Loud noises (https://github.com/opsdroid/skill-loudnoises)
   - name: loudnoises
+
+  ## Hacktoberfest (https://github.com/opsdroid/skill-hacktoberfest)
+  - name: hacktoberfest
