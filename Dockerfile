@@ -1,5 +1,4 @@
-FROM opsdroid/opsdroid:v0.9.1
+FROM opsdroid/opsdroid:dev
 
-EXPOSE 8080
-
-COPY configuration.yaml /root/.opsdroid/configuration.yaml
+COPY configuration.yaml /etc/opsdroid/configuration.yaml
+COPY skills /opt/opsdroid/skills

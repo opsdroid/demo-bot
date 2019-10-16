@@ -1,7 +1,8 @@
-# ZEIT demo deployment 
+# Heroku demo deployment
 
-[ZEIT](https://zeit.co/) is a great platform for deploying your opsdroid instance. 
+[Heroku](https://heroku.com/) is a great platform for deploying your opsdroid instance.
 
-This repo consists of the ZEIT config for running the opsdroid demo that you can find on Facebook Messenger and Twitter.
+If you set up your own deployment on Heroku be sure to add you credit card details to ensure you have enough free dyno hours for
+opsdroid to run 24/7.
 
-You can use it as a basis for your own ZEIT config.
+https://www.heroku.com/free

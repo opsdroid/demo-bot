@@ -1,0 +1,15 @@
+language: generic
+
+services:
+  - docker
+
+script:
+  - docker build -t opsdroid/opsdroid-demo:latest .
+
+deploy:
+  provider: heroku
+  app: opsdroid-demo
+  api_key:
+    secure: eHobbnQoIRqLqkm2tB8pM2+WH/E4+o4RhOGRCxwrTFG3486tiWxI7Ta58M6+4ULb9dcFoJoC7H1uBr3dVv6FmY0N7QeTsAzt4ZJdzGjkxPsaAkg0QF5yToSdf8TvXMl37YezzSCpsVf5DrBqOI+PZV6wHLUU8MA6Z8HetwtYPhi/qAkyckNIdy7p7RYUjFcPveVryY4tolFb3lgt6HlvRQa+pHsIWzdLsevSIIToTRyFKQ8dBljMK1BQFEMrRmmCq35IEXTJmtIq153D1vwpIislHxZlVZrrLGe8K7VcTvOWM1whWi98gLjHl6SWzK9/h4d0YNzdtee1iNdQ+8zcnMI8zfmfSv7PZc0S5iIpaZrZYzff8jpFYo+stfhWFLZ+nOzXpTH0Sl91qnES1tP79IVwWjyC/aeG5MB/Zrs5yLxu25yxpHyxS6nTFOF3QqpVFDRIKvQjaiHImvi0TiZV9zz4G7RwLVGZhMcsKGp+03Oqri9+hNcwH0H93T6o2YtiW95du3Qqtl+Hoi/7EHswFWLeEWCbdesmZhMNzs2tCMkKsZRDKABIcTQ8mqFTehvbNn4A3mobAq0+xCdwwlJSZXkBsQK3I3HxCuohMM4/30X9hPtJzlQ0e1fXDnvTD7LgmaJwAy5PRuRplKgtE0T15toKEcw2pvo1+a5VL4STBuE=
+  on:
+    branch: master
